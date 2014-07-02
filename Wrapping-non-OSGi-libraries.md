@@ -40,7 +40,7 @@ Note that wrapping non-OSGi libraries to OSGi bundles is automatically applied t
 
 ## Include non-OSGi library into OSGi-bundle
 
-There are cases when wrapping non-OSGi library as self-contained OSGi-bundle is not desirable. For example, we treat non-OSGi library is an implementation detail of some other bundle and don't want other parts of the program to see that library. Or we might want to use some specific version of non-OSGi library for a particular bundle, while globally we use another version.
+There are cases when wrapping non-OSGi library as self-contained OSGi-bundle is not desirable. For example, we treat non-OSGi library is an implementation detail of OSGi bundle and don't want other bundles to see that library. Or we might want to use some specific version of non-OSGi library for a particular bundle, while globally we use another version.
 
 Specifically for such cases Wuff supports inclusion of non-OSGi libraries into OSGi bundles. Example:
 
