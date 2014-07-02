@@ -6,7 +6,7 @@ Create folder "tutorials/MyIdePlugin", create file "build.gradle" in it, insert 
 
 ```groovy
 apply plugin: 'java'
-apply plugin: 'eclipse-ide-bundle'
+apply plugin: 'org.akhikhl.wuff.eclipse-ide-bundle'
 
 dependencies {
   compile "${eclipseMavenGroup}:org.eclipse.core.commands:+"
@@ -95,3 +95,4 @@ When you click "Show greeting", the program shows message dialog:
 The example code for this page: [examples/IdeApp-4](../tree/master/examples/IdeApp-4).
 
 Next page: [add perspective and view to IDE app](Add-perspective-and-view-to-IDE-app).
+

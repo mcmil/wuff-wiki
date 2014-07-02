@@ -68,3 +68,4 @@ As soon as we close intro page, we see the default perspective:
 The example code for this page: [examples/IdeApp-7](../tree/master/examples/IdeApp-7).
 
 Next page: [Localize IDE app](Localize-IDE-app).
+

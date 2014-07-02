@@ -6,7 +6,7 @@ Create folder "tutorials/MySwtLib", create file "build.gradle" in it, insert cod
 
 ```groovy
 apply plugin: 'java'
-apply plugin: 'swt-lib'
+apply plugin: 'org.akhikhl.wuff.swt-lib'
 ```
 
 Create folder "tutorials/MySwtLib/src/main/java/myswtlib", create file "HelloWorld.java" in it, insert code:
@@ -112,3 +112,4 @@ When we click on "Show dialog" button, the program shows message dialog:
 The example code for this page: [examples/SwtApp-4](../tree/master/examples/SwtApp-4).
 
 Next page: [localize SWT app](Localize-SWT-app).
+

@@ -37,6 +37,7 @@ products {
   product platform: 'linux', arch: 'x86_64'
   product platform: 'windows', arch: 'x86_32'
   product platform: 'windows', arch: 'x86_64'
+  product platform: 'macosx', arch: 'x86_64'
   archiveProducts = true
 }
 ```
@@ -60,3 +61,4 @@ Check: build task must generate products in "tutorials/MySwtApp/build/output" fo
 The example code for this page: [examples/SwtApp-3](../tree/master/examples/SwtApp-3).
 
 Next page: [Create SWT library and use it in SWT app](Create-SWT-library-and-use-it-in-SWT-app).
+

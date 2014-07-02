@@ -17,7 +17,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse-rcp-app'
+apply plugin: 'org.akhikhl.wuff.eclipse-rcp-app'
 
 repositories {
   mavenLocal()
@@ -41,7 +41,7 @@ Check: there must be one product in "tutorials/MyRcpApp/build/output" folder.
 
 Check: the product must contain "MyRcpApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
-Attention: first build might be slow, because Wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
+Attention: first build might be slow, because Wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.wuff/m2_repository). Consequent builds will be much faster.
 
 Note that we don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
 
@@ -56,3 +56,4 @@ Run the compiled product from command line. Expect to see:
 The example code for this page: [examples/RcpApp-1](../tree/master/examples/RcpApp-1).
 
 Next page: [Configure RCP products](Configure-RCP-products).
+

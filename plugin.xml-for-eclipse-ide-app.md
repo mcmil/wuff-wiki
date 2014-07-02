@@ -5,3 +5,4 @@ Programming "plugin.xml" for IDE app is not much different. There is only one di
 ---
 
 Next page: ["plugin.xml" expression injection](plugin.xml-expression-injection)
+

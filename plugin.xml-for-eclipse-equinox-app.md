@@ -49,3 +49,4 @@ Open file "tutorials/MyEquinoxApp/build/libs/MyEquinoxApp-1.0.0.0.jar", open "pl
 The example code for this page: [examples/PluginXml-3](../tree/master/examples/PluginXml-3).
 
 Next page: ["plugin.xml" for RCP app](Plugin.xml-for-eclipse-rcp-app).
+

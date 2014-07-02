@@ -17,7 +17,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse-ide-app'
+apply plugin: 'org.akhikhl.wuff.eclipse-ide-app'
 
 repositories {
   mavenLocal()
@@ -35,7 +35,7 @@ Check: there must be one product in "tutorials/MyIdeApp/build/output" folder.
 
 Check the product must contain "MyIdeApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
-Attention: first build might be slow, because Wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
+Attention: first build might be slow, because Wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.wuff/m2_repository). Consequent builds will be much faster.
 
 Note that we don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically. It's not even necessary to write any java code - we need only "build.gradle" and that's it.
 
@@ -54,3 +54,4 @@ Fully started program looks like Eclipse IDE with "Resource" perspective:
 The example code for this page: [examples/IdeApp-1](../tree/master/examples/IdeApp-1).
 
 Next page: [Configure IDE products](Configure-IDE-products).
+

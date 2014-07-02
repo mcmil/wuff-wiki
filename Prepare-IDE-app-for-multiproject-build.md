@@ -30,13 +30,14 @@ subprojects {
 "tutorials/MyIdeApp/build.gradle":
 ```groovy
 apply plugin: 'java'
-apply plugin: 'eclipse-ide-app'
+apply plugin: 'org.akhikhl.wuff.eclipse-ide-app'
   
 products {
   product platform: 'linux', arch: 'x86_32'
   product platform: 'linux', arch: 'x86_64'
   product platform: 'windows', arch: 'x86_32'
   product platform: 'windows', arch: 'x86_64'
+  product platform: 'macosx', arch: 'x86_64'
   archiveProducts = true
 }
 ```
@@ -60,3 +61,4 @@ Check: build task must generate products in "tutorials/MyIdeApp/build/output" fo
 The example code for this page: [examples/IdeApp-3](../tree/master/examples/IdeApp-3).
 
 Next page: [Create IDE bundle and use it in IDE app](Create-IDE-bundle-and-use-it-in-IDE-app).
+

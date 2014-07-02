@@ -5,7 +5,7 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
 Edit "tutorials/build.gradle", insert code:
 
 ```groovy
-apply plugin: 'eclipse-config'
+apply plugin: 'org.akhikhl.wuff.eclipse-config'
 
 wuff {
   languagePack 'de'
@@ -28,11 +28,13 @@ products {
   product platform: 'windows', arch: 'x86_32', language: 'de'
   product platform: 'windows', arch: 'x86_64'
   product platform: 'windows', arch: 'x86_64', language: 'de'
+  product platform: 'macosx', arch: 'x86_64'
+  product platform: 'macosx', arch: 'x86_64', language: 'de'
   archiveProducts = true
 }
 ```
 
-Here we define 8 products: 4 are English, 4 are German.
+Here we define 10 products: 5 are English, 5 are German.
 
 ### Localize messages
 
@@ -243,3 +245,4 @@ When we click the button or invoke our menu, the program displays localized mess
 The example code for this page: [examples/IdeApp-8](../tree/master/examples/IdeApp-8).
 
 We are done with building IDE app. Now we can go back to [wiki home page](Home) and learn something else.
+

@@ -68,3 +68,4 @@ As soon as we close intro page, we see the default perspective:
 The example code for this page: [examples/RcpApp-6](../tree/master/examples/RcpApp-6).
 
 Next page: [Localize RCP app](Localize-RCP-app).
+

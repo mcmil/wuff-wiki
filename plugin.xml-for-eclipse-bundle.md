@@ -17,7 +17,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse-bundle'
+apply plugin: 'org.akhikhl.wuff.eclipse-bundle'
 
 repositories {
   mavenLocal()
@@ -183,3 +183,4 @@ As we see, now Wuff recognizes that "plugin.xml" already contains extension-poin
 The example code for this page: [examples/PluginXml-1](../tree/master/examples/PluginXml-1) and [examples/PluginXml-2](../tree/master/examples/PluginXml-2).
 
 Next page: ["plugin.xml" for Equinox app](Plugin.xml-for-eclipse-equinox-app).
+

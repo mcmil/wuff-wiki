@@ -23,3 +23,4 @@ Run the compiled product from command line. The program shows splash screen whil
 The example code for this page: [examples/RcpApp-5](../tree/master/examples/RcpApp-5).
 
 Next page: [Add intro page to RCP app](Add-intro-page-to-RCP-app).
+

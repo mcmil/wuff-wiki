@@ -198,3 +198,4 @@ Wuff generated two new extension points: "org.eclipse.ui.intro" and "org.eclipse
 ---
 
 Next page: ["plugin.xml" for IDE app](Plugin.xml-for-eclipse-ide-app)
+

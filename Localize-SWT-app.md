@@ -5,7 +5,7 @@ We already [created SWT library and used it in SWT app](Create-SWT-library-and-u
 Edit "tutorials/build.gradle", insert code:
 
 ```groovy
-apply plugin: 'eclipse-config'
+apply plugin: 'org.akhikhl.wuff.eclipse-config'
 
 wuff {
   languagePack 'de'
@@ -28,11 +28,13 @@ products {
   product platform: 'windows', arch: 'x86_32', language: 'de'
   product platform: 'windows', arch: 'x86_64'
   product platform: 'windows', arch: 'x86_64', language: 'de'
+  product platform: 'macosx', arch: 'x86_64'
+  product platform: 'macosx', arch: 'x86_64', language: 'de'
   archiveProducts = true
 }
 ```
 
-Here we define 8 products: 4 are English, 4 are German.
+Here we define 10 products: 5 are English, 5 are German.
 
 ### Localize messages
 

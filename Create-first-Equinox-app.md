@@ -17,7 +17,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse-equinox-app'
+apply plugin: 'org.akhikhl.wuff.eclipse-equinox-app'
 
 repositories {
   mavenLocal()
@@ -42,7 +42,7 @@ Check: folder "tutorials/MyEquinoxApp/build/output" must contain equinox product
 
 Check: the product must contain "MyEquinoxApp" bundle in "plugins" subfolder and in "configuration/config.ini".
 
-Attention: first build might be slow, because Wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
+Attention: first build might be slow, because Wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.wuff/m2_repository). Consequent builds will be much faster.
 
 Note: we don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into the bundle and the product automatically.
 
@@ -57,3 +57,4 @@ Run the compiled product from command line. The expected output:
 The example code for this page: [examples/EquinoxApp-1](../tree/master/examples/EquinoxApp-1).
 
 Next page: [Configure Equinox products](Configure-Equinox-products).
+

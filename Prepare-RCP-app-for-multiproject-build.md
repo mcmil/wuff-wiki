@@ -30,13 +30,14 @@ subprojects {
 "tutorials/MyRcpApp/build.gradle":
 ```groovy
 apply plugin: 'java'
-apply plugin: 'eclipse-rcp-app'
+apply plugin: 'org.akhikhl.wuff.eclipse-rcp-app'
   
 products {
   product platform: 'linux', arch: 'x86_32'
   product platform: 'linux', arch: 'x86_64'
   product platform: 'windows', arch: 'x86_32'
   product platform: 'windows', arch: 'x86_64'
+  product platform: 'macosx', arch: 'x86_64'
   archiveProducts = true
 }
 ```
@@ -60,3 +61,4 @@ Check: build task must generate products in "tutorials/MyRcpApp/build/output" fo
 The example code for this page: [examples/RcpApp-3](../tree/master/examples/RcpApp-3).
 
 Next page: [Create Eclipse bundle and use it in RCP app](Create-Eclipse-bundle-and-use-it-in-RCP-app).
+

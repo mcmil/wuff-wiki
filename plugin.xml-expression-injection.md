@@ -67,3 +67,4 @@ Expression injection would produce errors with such Eclipse-specific expressions
 The example code for this page: [examples/PluginXml-4](../tree/master/examples/PluginXml-4).
 
 We are done with programming "plugin.xml". Now we can go back to [wiki home page](Home) and learn something else.
+
