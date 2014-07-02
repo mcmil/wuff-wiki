@@ -73,3 +73,5 @@ dependencies {
 Please note that we use "privateLib" configuration, not "compile" or "runtime". This is special configuration for including non-OSGi libraries into OSGi bundles.
 
 When we invoke `gradle build`, Wuff creates an OSGi bundle in "build/libs" directory. Let's have a look inside the generated jar-file: it now contains "jdom2-2.0.5.jar". The generated OSGi-manifest contains instruction `Bundle-ClassPath: .,jdom2-2.0.5.jar`, which makes non-OSGi library accessible to OSGi-bundle at runtime. Note that OSGi-bundle does not export any packages provided by non-OSGi library, that means - library is an implementation detail of OSGi bundle and it is not accessible in other bundles.
+
+Adding non-OSGi library twice - as "privateLib" and as "compile" dependency - is not necessary. "compile" configuration extends from "privateLib", that means - all classes of "privateLib" library are already accessible to the code of OSGi-library at compile-time.
