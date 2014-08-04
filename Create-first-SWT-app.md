@@ -15,7 +15,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'swt-app'
+apply plugin: 'org.akhikhl.wuff.swt-app'
 
 repositories {
   mavenLocal()
