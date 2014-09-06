@@ -34,14 +34,14 @@ wuff {
   and downloads eclipse distributions into it as needed.
 
 <a name="selectedEclipseVersion"></a>
-- **selectedEclipseVersion** - string, optional, default value is '4.3.2'. 
-  Defines which version of eclipse is to be downloaded and installed by Wuff tasks.
+- **selectedEclipseVersion** - string, optional, default value is '4.4'. 
+  Defines which version of eclipse is to be downloaded and installed by Wuff tasks. Wuff preconfigures the following eclipse versions to be chosen: '3.7.1', '3.7.2', '4.2.1', '4.2.2', '4.3.1', '4.3.2', '4.4'.
   
 <a name="eclipseVersion"></a>
 - **eclipseVersion** - function(String, Closure), multiplicity 0..n. When called, defines version-specific configuration. Wuff configuration may contain multiple version-specific configurations. Only one version-specific configuration is "active" - this is defined by selectedEclipseVersion.
 
 <a name="eclipseMavenGroup"></a>
-- **eclipseMavenGroup** - string, optional, default value (for version '4.3.2') is 'eclipse-kepler-sr2'.
+- **eclipseMavenGroup** - string, optional, default value (for version '4.4') is 'eclipse-luna'.
 
 <a name="eclipseMirror"></a>
 - **eclipseMirror** - string, optional, default is 'http://mirror.netcologne.de'. Can be used for specifying common base URL.
