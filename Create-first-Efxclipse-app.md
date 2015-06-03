@@ -64,5 +64,4 @@ Run the compiled product from command line. The expected output:
 
 The example code for this page: [examples/EfxclipseApp-1](../tree/master/examples/EfxclipseApp-1).
 
-Next page: [prepared Equinox app for multiproject build](Prepare-Equinox-app-for-multiproject-build)
 
